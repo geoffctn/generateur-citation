@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background: #333 url("https://static.pexels.com/photos/1029/landscape-mountains-nature-clouds.jpg") center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  color: #333;
+  font-family: "Montserrat", serif;
+}
+
+button {
+  background-color: inherit;
+  color: #333;
+  border: none;
+  opacity: .3;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  opacity: .3;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.panel-quote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 400px;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.social-share {
+  text-align: center;
+}
+
+.social-share i {
+  color: #333;
+}
+
+.quote-progress {
+  width: 0;
+  height: 3px;
+  background-color: #333;
+}
+
+blockquote {
+  padding: 30px;
+  font-size: 1.4em;
+}
+
+.quote {
+  font-family: "Crimson Text", serif;
+  font-style: italic;
+}
+
+.author {
+  font-size: 0.6em;
+  font-weight: lighter;
+  text-align: right;
+}
+
+/* Quote Navigation */
+.quote-nav {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.previous {
+  margin: auto;
+}
+
+.next {
+  margin: auto;
+}
+
+/* Media Queries */
+@media screen and (max-width: 460px) {
+  .panel-quote {
+    min-width: 100%;
+  }
+  
+  blockquote {
+    font-size: 1.1em;
+  }
+}
